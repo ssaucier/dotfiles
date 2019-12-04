@@ -1,0 +1,11 @@
+[user]
+	name = Geremy Hamlett
+	email = ghamlett@bellflight.com
+[http]
+	sslverify = false
+[core]
+	eol = lf
+[credential]
+	helper = cache
+[url "https://github.com/"]
+	insteadof = git@github..com:
