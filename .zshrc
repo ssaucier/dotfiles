@@ -6,7 +6,7 @@ export EDITOR=$MAIN_EDITOR
 export VISUAL=$EDITOR
 export LSCOLORS='exfxcxdxbxegedabagacad'
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
-export PROMPT='%~$(git-prompt-info)$ '
+export PROMPT='%F{blue}%3~%f$(git-prompt-info)$ '
 export WORDCHARS='*?_[]~=&;!#$%^(){}'
 export FZF_DEFAULT_OPTS='--reverse --color="info:#000000,spinner:#000000" --prompt="  "'
 export HISTFILE=~/.zsh_history
@@ -34,6 +34,8 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
+
+export WORKSPACE=/mnt/c/workspace
 
 #############################
 ### General configuration ###
@@ -77,9 +79,8 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-
 ### Plugins configuration ###
 #############################
 
-#source ~/.zsh/z.sh
-#unalias z
 alias ls="ls --color=auto"
+alias vi="vim"
 
 ####################
 ### Key bindings ###
