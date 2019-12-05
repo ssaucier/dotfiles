@@ -81,6 +81,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-
 
 alias ls="ls --color=auto"
 alias vi="vim"
+alias auto="~/autonomy_setup.sh"
 
 ####################
 ### Key bindings ###
